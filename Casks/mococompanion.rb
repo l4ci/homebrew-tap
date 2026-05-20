@@ -1,6 +1,6 @@
 cask "mococompanion" do
-  version "0.5.6"
-  sha256 "35f78b12d1852f0e08871e4581dd8d48254862e944033956f4e4699f73108c1e"
+  version "0.6.0"
+  sha256 "273cf2f2faaf3bb7459e46e7271a1c60f095b358dfcb66e1715abbe26772f470"
 
   url "https://github.com/l4ci/MocoCompanion/releases/download/v#{version}/MocoCompanion-#{version}.zip"
   name "MocoCompanion"
