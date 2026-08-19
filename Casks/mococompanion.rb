@@ -7,7 +7,7 @@ cask "mococompanion" do
   desc "Menubar companion for Moco time tracking"
   homepage "https://github.com/l4ci/MocoCompanion"
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :tahoe
 
   app "MocoCompanion.app"
 
