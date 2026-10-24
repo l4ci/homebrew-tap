@@ -5,21 +5,21 @@
 class Rota < Formula
   desc "Plan, ship and run parallel rounds with AI coding agents"
   homepage "https://github.com/l4ci/rota"
-  version "0.24.0"
+  version "0.25.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/l4ci/rota/releases/download/v0.24.0/rota_0.24.0_darwin_amd64.tar.gz"
-      sha256 "453b36c4469163fc45da7b1d1162101f5bfb0d1cd4d5ee2e302b1c47ecbf0ffb"
+      url "https://github.com/l4ci/rota/releases/download/v0.25.0/rota_0.25.0_darwin_amd64.tar.gz"
+      sha256 "f9d464be5288eab23ee4f112a8bef917a1245d74c5abac1c1a3e34fb6181c74d"
 
       define_method(:install) do
         bin.install "rota"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/l4ci/rota/releases/download/v0.24.0/rota_0.24.0_darwin_arm64.tar.gz"
-      sha256 "f9dcf7bd50554776f0fb9ccdb247b10c84f6cced69c012dc058fcff46f56f7b1"
+      url "https://github.com/l4ci/rota/releases/download/v0.25.0/rota_0.25.0_darwin_arm64.tar.gz"
+      sha256 "c929f933b476409ca385fff6598e833ae39eb17d5e287c11766b431e670f86eb"
 
       define_method(:install) do
         bin.install "rota"
@@ -29,15 +29,15 @@ class Rota < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/l4ci/rota/releases/download/v0.24.0/rota_0.24.0_linux_amd64.tar.gz"
-      sha256 "69292e66ce6eb66563e1a8c2405abb5304a2bfb40c91f1a11dfb40ff4aebafda"
+      url "https://github.com/l4ci/rota/releases/download/v0.25.0/rota_0.25.0_linux_amd64.tar.gz"
+      sha256 "7ee1cb4e45e1f9ce76a3f8983e3e618263eb5d25d80bc4353b800ca125f02d10"
       define_method(:install) do
         bin.install "rota"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/l4ci/rota/releases/download/v0.24.0/rota_0.24.0_linux_arm64.tar.gz"
-      sha256 "9b927bf4931c9e99d7716759efeeda08524a777e1aa164282539f7f699fed352"
+      url "https://github.com/l4ci/rota/releases/download/v0.25.0/rota_0.25.0_linux_arm64.tar.gz"
+      sha256 "c7c294cdd0e24326e43954518be6ba2d8798ef2b3d28d74c52290d7cc8bd5401"
       define_method(:install) do
         bin.install "rota"
       end
